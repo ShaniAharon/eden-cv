@@ -45,3 +45,28 @@ for (var i = 0; i < navLinks.length; i++) {
     scrollBtn.style.pointerEvents = "auto";
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const email = document.querySelector('.email').value;
+    const subject = document.querySelector('.subject').value;
+    const message = document.querySelector('.message').value;
+    const emailBody = message + '___Email sent from: ' + email;
+
+    const companyMail = 'hasiltd@gmail.com'
+
+    // const emailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=${companyMail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}&tf=cm`
+    const mailtoUrl = `mailto:${companyMail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    window.open(mailtoUrl)
+
+    // Clear form inputs
+    document.querySelector('.email').value = '';
+    document.querySelector('.subject').value = '';
+    document.querySelector('.message').value = '';
+  });
+});

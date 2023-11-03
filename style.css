@@ -120,7 +120,7 @@ nav.sticky .menu-btn {
 .home {
   height: 100vh;
   width: 100%;
-  background: url('images/black-eden.png') no-repeat;
+  background: url('imgs/black-eden.png') no-repeat;
   background-size: cover;
   /* background-position: right; */
   background-position-x: 100%;
