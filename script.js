@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const pname = document.querySelector('.pname').value;
     const subject = document.querySelector('.subject').value;
     const message = document.querySelector('.message').value;
-    const emailBody = message + '___Email sent from: ' + ' ' + pname + ' Phone' + phone;
+    const emailBody = message + ' \n ___Email sent from: ' + ' ' + pname + ' Phone: ' + phone;
 
     const companyMail = 'Edenvak5@gmail.com'
 

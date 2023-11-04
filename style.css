@@ -128,6 +128,7 @@ nav.sticky .menu-btn {
   /* good for the inner scroll effect */
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  transition: 0.5s;
 }
 
 .home .home-content {
