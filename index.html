@@ -37,7 +37,6 @@
         </ul>
         <div class="media-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
@@ -227,20 +226,21 @@
         <div class="title"><span>Contact Me</span></div>
         <div class="column right">
           <!-- <div class="text">Message me</div> -->
-          <form action="#">
+          <form class="contact-form">
             <div class="fields">
               <div class="field name">
-                <input type="text" placeholder="Name" required />
+                <input type="text" class="pname" placeholder="Name" required />
               </div>
-              <div class="field email">
-                <input type="email" placeholder="Email" required />
+              <div class="field">
+                <input type="text" class="phone" placeholder="Phone" required />
               </div>
             </div>
             <div class="field">
-              <input type="text" placeholder="Subject" required />
+              <input type="text" class="subject" placeholder="Subject" required />
             </div>
             <div class="field textarea">
               <textarea
+              class="message"
                 cols="30"
                 rows="10"
                 placeholder="Message.."

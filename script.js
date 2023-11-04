@@ -53,20 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const email = document.querySelector('.email').value;
+    const phone = document.querySelector('.phone').value;
+    const pname = document.querySelector('.pname').value;
     const subject = document.querySelector('.subject').value;
     const message = document.querySelector('.message').value;
-    const emailBody = message + '___Email sent from: ' + email;
+    const emailBody = message + '___Email sent from: ' + ' ' + pname + ' Phone' + phone;
 
-    const companyMail = 'hasiltd@gmail.com'
+    const companyMail = 'Edenvak5@gmail.com'
 
     // const emailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=${companyMail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}&tf=cm`
     const mailtoUrl = `mailto:${companyMail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
     window.open(mailtoUrl)
 
     // Clear form inputs
-    document.querySelector('.email').value = '';
+    document.querySelector('.phone').value = '';
     document.querySelector('.subject').value = '';
     document.querySelector('.message').value = '';
+    document.querySelector('.pname').value = '';
   });
 });
